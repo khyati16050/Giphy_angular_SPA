@@ -1,0 +1,10 @@
+
+    <div class="gifs">
+        <div class="gif" *ngFor="let gifs of gifList">
+            <img src= {{gifs.url}} alt="image">
+            <button (click)="delete(gifs)">Delete</button>
+          
+    
+        </div>
+    
+    </div>

@@ -1,0 +1,15 @@
+.login{
+    margin:auto 800px;
+}
+.login input{
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.login button{
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}

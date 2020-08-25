@@ -1,0 +1,9 @@
+<div class="gifs">
+    <div class="gif" *ngFor="let gif of gifs">
+        <img [src]="gif.images.downsized.url" alt="image" #img>
+        <button (click)="addFav(gif.images.downsized.url)">Add to Favourite</button>
+
+
+    </div>
+
+</div>
