@@ -12,4 +12,26 @@
     margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 40px;
+    background-color: pink;
+}
+@media(max-width:576px)
+{
+    .login{
+        margin-top:150px;
+        margin-left: 200px;
+        width: 100%;
+    }
+    .login input{
+        padding: 8px 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    .login button{
+        padding: 18px;
+        margin-top: 20px;
+        margin-left: 70px;
+        margin-bottom: 40px;
+        background-color: pink;
+    }
 }

@@ -17,14 +17,14 @@ password: string;
   }
   login(username,password)
   {
-    if(username=="admin" && password=="pass" ||username=="admin" && password=="pass")
+    if(username=="admin" && password=="pass" ||username=="manager" && password=="pass")
     {
       this.username = username;
       this.password = password;
       let flag = this.authenticationService.authenticateUser({username: this.username, password: this.password});
       if(flag)
       {
-        this.authenticationService.setBearerToken('token');
+        this.authenticationService.setBearerToken('token',this.username);
         this.router.navigate(['favourites'])
       }
       

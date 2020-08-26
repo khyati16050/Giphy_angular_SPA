@@ -3,6 +3,7 @@
     grid-template-columns: auto auto auto auto;
     width: 1600px;
     margin: 0 auto;
+    
 }
 .gif img{
     width: 400px;
@@ -18,4 +19,28 @@
     border: 2px solid black;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+@media(max-width:576px)
+{
+    .gifs{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .gif img{
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+    }
+    .gif button{
+        background-color: palevioletred;
+        color: black;
+        width: 100px;
+        height: 50px;
+        margin-left: 100px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 }

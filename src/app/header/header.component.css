@@ -1,23 +1,4 @@
-/* .heading{
-    background-color: black;
-    color: white;
-    
-    padding: 16px;
-    font: 30px bold;
-    border: 2px solid aqua;
-    
-}
-.heading img{
-    width: 120px;
-    height: 100px;
-    ;
-}
-.heading h3{
-    font: 30px bold;
-    margin-left: 120px;
-    margin-top: 0px;
-    text-align: center;
-} */
+
 .web-header{
     padding: 5px;
     display: flex;
@@ -51,7 +32,7 @@ color:white;
     justify-content: flex-start;
     align-items: center;
     width: 98%;
-    /* border: 1px solid yellow; */
+  
 }
 .logo img{
     width:8vw;
@@ -61,11 +42,8 @@ color:white;
 .topnav{
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-end; */
-    /* justify-content: space-between; */
     margin-top: 3.5vh;
     margin-right: 2vw;
-    /* border: 1px solid yellow; */
     width: 98%;
     background-color: black
 }
@@ -73,9 +51,6 @@ color:white;
     color: white;
     font-size: 20px;
     display: inline;
-    /* padding: 0 10vw; */
-    /* margin: 6px 0px 6px 840px; */
-    /* width: 100%; */
     padding: 0 1vw; 
     background-color: black;
     margin: 0 10px;
@@ -83,4 +58,67 @@ color:white;
 .topnav button:hover{
     background-color: white;
     color: olive;
+}
+@media(max-width:576px)
+{
+.web-header{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position:fixed;
+    top: 0;
+background-color: black;
+color:white;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid yellow; */
+    width: 100%;
+    
+}
+.web-header h1{
+    margin: auto 0;
+    font-size: 25px;
+    display: inline;
+      
+
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+  
+}
+.logo img{
+    visibility: hidden;
+    width:8vw;
+    height:10vh;
+}
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5vh;
+    margin-right: 2vw;
+    width: 98%;
+    background-color: black
+}
+.topnav button{
+    color: white;
+    font-size: 15px;
+    display: inline;
+    padding: 0 1vw; 
+    background-color: black;
+    margin: 0 5px;
+}
+.topnav button:hover{
+    background-color: white;
+    color: olive;
+}
 }

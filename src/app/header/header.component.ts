@@ -31,5 +31,13 @@ export class HeaderComponent implements OnInit {
   {
     this.router.navigate(['favourites'])
   }
+  logout()
+  {
+    this.routerService.routeToHome();
+    console.log("logout");
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    
+  }
 
 }

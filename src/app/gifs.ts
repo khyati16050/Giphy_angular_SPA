@@ -1,5 +1,5 @@
 export class Gifs {
-    constructor(public id?: number,public url?: string){
+    constructor(public id?: number,public username?: string,public url?: string){
 
     }
 }

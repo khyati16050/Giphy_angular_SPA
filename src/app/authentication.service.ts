@@ -5,19 +5,20 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthenticationService {
-  public users = [{
-    username:"admin",
-    password:"pass",
-    list: []
-  }]
+  // public users = [{
+  //   username:"admin",
+  //   password:"pass",
+  //   list: []
+  // }]
 
   constructor() { }
   authenticateUser(data) {
-    return (data.username === 'admin' || data.username === 'stranger') && data.password == 'pass';
+    return (data.username === 'admin' || data.username === 'manager') && data.password == 'pass';
   }
 
-  setBearerToken(token) {
+  setBearerToken(token,username) {
     localStorage.setItem('token', token);
+    localStorage.setItem(`username`,username)
   }
 
   getBearerToken() {

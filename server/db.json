@@ -1,3 +1,19 @@
 {
-  "fav": []
+  "fav": [
+    {
+      "username": "manager",
+      "url": "https://media1.giphy.com/media/TGzuCPy3l528L0tHW6/giphy-downsized.gif?cid=2197d02707157787f5f386221d19d7beea0ce376f79ecb35&rid=giphy-downsized.gif",
+      "id": 1
+    },
+    {
+      "username": "manager",
+      "url": "https://media1.giphy.com/media/3oxQNkoGrQYW7pqGB2/giphy-downsized.gif?cid=2197d02707157787f5f386221d19d7beea0ce376f79ecb35&rid=giphy-downsized.gif",
+      "id": 2
+    },
+    {
+      "username": "manager",
+      "url": "https://media1.giphy.com/media/fuEphrgkj54CNULqBN/giphy.gif?cid=2197d02707157787f5f386221d19d7beea0ce376f79ecb35&rid=giphy.gif",
+      "id": 3
+    }
+  ]
 }

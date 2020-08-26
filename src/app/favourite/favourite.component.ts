@@ -17,7 +17,14 @@ public gifList: Gifs[] = [];
 
   ngOnInit() {
     this.gifsService.getFav().subscribe(data => {
-        this.gifList = data;
+      var user = localStorage.getItem('username');
+      data.forEach(element => {
+        if(element.username == user)
+        this.gifList.push(element);
+      });
+      
+      
+        // this.gifList = data;
     });
   }
   
@@ -29,6 +36,7 @@ public gifList: Gifs[] = [];
       this.gifList.splice(this.gif.id-1,1);
   });
   this.gif = new Gifs();
+  
   
    
   }}
