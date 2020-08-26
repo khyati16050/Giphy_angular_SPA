@@ -1,16 +1,16 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('home page test', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should check header presentation on home page', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('spa-giphy app is running!');
+    expect(page.isHeaderPresent()).toBeTruthy('.web-header should exist in header.component.css');
   });
 
   afterEach(async () => {
